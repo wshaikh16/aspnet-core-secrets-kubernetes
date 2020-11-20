@@ -15,7 +15,7 @@ namespace aspnet_core_secrets
         }
         public static IConfigurationRoot Configuration { get; set; }
 
-        public void Configure(IApplicationBuilder app, IHostEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
