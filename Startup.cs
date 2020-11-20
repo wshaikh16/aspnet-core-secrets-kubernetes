@@ -25,9 +25,6 @@ namespace aspnet_core_secrets
                 .AddEnvironmentVariables();
 
             Configuration = builder.Build();
-
-            loggerFactory.AddConsole();
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
